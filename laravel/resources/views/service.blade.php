@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 @section('page')
 <main>
@@ -269,4 +270,64 @@
             </section>
             <!-- faq-area-end -->
         </main>
+        <!-- Start Testimonials
+    ============================================= -->
+    <div class="testimonials-area p-5">
+        <div class="container">
+            <div class="testimonial-items pb-5">
+                <div class="row align-center">
+                    <div class="col-lg-5 wow fadeInUp "style="visibility: visible;animation-name: fadeInUp;height: 400px;">
+                        <img src="img/images/Testimoni.svg" width="500px" height="500px"  alt="Thumb">
+                    </div>
+                    <div class="col-lg-6 wow fadeInLeft offset-lg-1 testimonial-content">
+                        <div class="heading">
+                            <h2>Ini kata mereka <br> tentang One Dream</h2>
+                        </div>
+                        <div class="testimonials-carousel owl-carousel owl-theme">
+                            <!-- Single Item -->
+                            <div class="item">
+                                <p>
+                                    Mampu menerjemahkan sebuah gagasan dalam seuatu konsep ilustrasi yang sesuai dengan ekspektasi.
+                                </p>
+                                <div class="author">
+                                    <div class="info">
+                                        <h5>Info Serang</h5>
+                                        <span>Kota Serang-Banten</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="item">
+                                <p>
+                                    Saya sangat puas dengan hasilnya, persis seperti yang saya inginkan, One Dream melakukan pekerjaan dengan sangat baik!
+                                </p>
+                                <div class="author">
+                                    <div class="info">
+                                        <h5>Asli Puruk Cahu</h5>
+                                        <span>Kalimantan</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="item">
+                                <p>
+                                    Selera yang bagus, membuat bisnis saya semakin aktif di sosial media, terima kasih banyak One Dream
+                                </p>
+                                <div class="author">
+                                    <div class="info">
+                                        <h5>Luv Khitchen</h5>
+                                        <span>Kediri-Jawa Timur</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials Area -->
 @endSection

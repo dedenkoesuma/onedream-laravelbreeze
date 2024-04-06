@@ -1,14 +1,12 @@
-@guest
-@include('partials.head')
 <footer>
-            <div class="footer-wrap pt-85 pb-40" data-background="img/shape/bg-4.png">
+            <div class="footer-wrap pt-85 pb-40" data-background="{{ asset('img/shape/bg-4.png')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="footer-widget mb-50">
                                 <div class="col-lg-3">
                                     <div class="footer-logo">
-                                        <a href="index.html"><img src="img/logo/w_logo.svg" width="120px" alt="img"></a>
+                                        <a href="index.html"><img src="{{asset('img/logo/w_logo.svg')}}" width="120px" alt="img"></a>
                                     </div>
                                 </div>
                             </div>
@@ -19,10 +17,10 @@
                                     <h5>Kontak Kami</h5>
                                 </div>
                                 <div class="f-rc-post">
-                                    <ul>
+                                    <ul class="">
                                         <li>
                                             <div class="f-rc-thumb">
-                                                <a href="#"><img src="img/icon/placeholder.png"  class="mb-0 pr-2 icon1" width="75px"alt="img"></a>
+                                                <a href="#"><img src="{{asset('img/Icon/placeholder.png')}}"  class="mb-0 pr-2 icon1" width="75px"alt="img"></a>
                                             </div>
                                             <div class="f-rc-content">
                                                 <h5><a href="https://www.google.com/maps/place/One+Dream+Creative+Indonesia/@-6.1020111,106.1528041,15z/data=!4m2!3m1!1s0x0:0xce834a34d40fd12c?sa=X&ved=2ahUKEwiRt5OJ5In_AhXSaGwGHXKlAPAQ_BJ6BAhMEAk">
@@ -31,17 +29,17 @@
                                         </li>
                                         <li>
                                             <div class="f-rc-thumb">
-                                                <a href="#"><img src="img/icon/mail.png"  class="mb-0 pr-2 icon2" width="75px"alt="img"></a>
+                                                <a href="#"><img src="{{asset('img/Icon/mail.png')}}"  class="mb-0 pr-3 icon2" width="35px"alt="img"></a>
                                             </div>
                                             <div class="f-rc-content">
-                                                <h5 style="width: 235px"><a href="mailto:kontak.onedream@gmail.com" >
+                                                <h5 style="width: 20px"><a href="mailto:kontak.onedream@gmail.com" >
                                                 kontak.
                                                 onedream@gmail.com</a></h5>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="f-rc-thumb">
-                                                <a href="#"><img src="img/icon/call.png"  class="mb-0 pr-2 " width="40px"alt="img"></a>
+                                                <a href="#"><img src="{{asset('img/Icon/call.png')}}"  class="mb-0 pr-2 " width="35px"alt="img"></a>
                                             </div>
                                             <div class="f-rc-content">
                                                 <h5><a href="https://wa.me/6281213369843">
@@ -71,19 +69,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="footer-widget mb-50">
                                 <div class="fw-title mb-30">
-                                    <h5>Ikuti Kami</h5>
+                                <h5>Ikuti Kami</h5>
                                 </div>
                                 <div class="f-support-content">
                                         <p>Ikuti sosial media kami untuk mendapatkan informasi menarik didalamnya!</p>
-                                    <div class="row">
+                                    <div class="d-flex">
                                             <a href="https://www.instagram.com/onedreamcreative" target="_blank" class="footer__social-link"> 
-                                        <img src="img/Icon/instagram.png" style="height: 30px;">
+                                        <img src="{{asset('img/Icon/instagram.png')}}" style="height: 30px;">
                                         <a href="https://www.youtube.com/channel/UCnPvqX6LhC2d017MikicrZg" target="_blank" class="footer__social-link">
-                                        <img src="img/Icon/youtube.png" style="padding-left: 5px;height: 30px;">
+                                        <img src="{{asset('img/Icon/youtube.png')}}" style="padding-left: 5px;height: 30px;">
                                         <a href="https://www.tiktok.com/@onedreamcreative" target="_blank" class="footer__social-link">
-                                        <img src="img/Icon/tiktok.png" style="padding-left: 5px;height: 30px;">
+                                        <img src="{{asset('img/Icon/tiktok.png')}}" style="padding-left: 5px;height: 30px;">
                                         <a href="https://www.linkedin.com/company/onedreamcreative/" target="_blank" class="footer__social-link">
-                                        <img src="img/Icon/linkedin.png" style="padding-left: 5px;height: 30px;">
+                                        <img src="{{asset('img/Icon/linkedin.png')}}" style="padding-left: 5px;height: 30px;">
                                         </a>
                                     </div>
                                 </div>
@@ -102,11 +100,10 @@
                         </div>
                         <div class="col-lg-6 col-md-5">
                             <div class="f-payment-method text-center text-md-right">
-                                <img src="img/images/card_img.png" alt="img">
+                                <img src="{{ asset('img/images/card_img.png')}}" alt="img">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 </footer>
-@endguest

@@ -417,5 +417,76 @@ function wowanimation() {
 	wow.init();
 }
 
+	 /* ------------------ MAGNIFIC POPUP ------------------ */
 
+	 var $imgPopup = $(".img-popup");
+	 $imgPopup.magnificPopup({
+		 type: "image"
+	 });
+	 $('.img-gallery-item').magnificPopup({
+	type: 'image',
+	gallery:{
+		enabled:true
+	}
+	});
+
+
+/* ==================================================
+      # Testimonials Carousel
+    ===============================================*/
+    $('.testimonials-carousel').owlCarousel({
+    loop: false,
+    nav: false,
+    margin:30,
+    dots: true,
+    autoplay: true,
+    items: 1,
+    navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+    ]
+});
 })(jQuery);
+
+    /* ------------------ PORTFOLIO FLITER ------------------ */
+
+    var $portfolioFilter = $(".portfolio-filter"),
+        portfolioLength = $portfolioFilter.length,
+        protfolioFinder = $portfolioFilter.find("a"),
+        $portfolioAll = $("#portfolio-all");
+
+    // init Isotope For portfolio
+    protfolioFinder.on("click", function(e) {
+        e.preventDefault();
+        $portfolioFilter.find("a.active-filter").removeClass("active-filter");
+        $(this).addClass("active-filter");
+    });
+    if (portfolioLength > 0) {
+        $portfolioAll.imagesLoaded().progress(function() {
+            $portfolioAll.isotope({
+                filter: "*",
+                animationOptions: {
+                    duration: 750,
+                    itemSelector: ".portfolio-item",
+                    easing: "linear",
+                    queue: false,
+                }
+            });
+        });
+    }
+    protfolioFinder.on("click", function(e) {
+        e.preventDefault();
+        var $selector = $(this).attr("data-filter");
+        $portfolioAll.imagesLoaded().progress(function() {
+            $portfolioAll.isotope({
+                filter: $selector,
+                animationOptions: {
+                    duration: 750,
+                    itemSelector: ".portfolio-item",
+                    easing: "linear",
+                    queue: false,
+                }
+            });
+            return false;
+        });
+    });

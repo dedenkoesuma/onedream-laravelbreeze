@@ -9,12 +9,12 @@
                     <div class="slider-content mt-15">
                         <h2 class="wow slideInLeft" data-wow-delay="0.2s">Menyatukan <span>Mimpi</span> dalam <span>Visualisasi</span></h2>
                         <p class="wow slideInLeft" data-wow-delay="0.4s">Kami menghadirkan solusi tentang komunikasi yang efektif dan efisien guna mendukung usaha Anda.</p>
-                        <a href="{{ url('/') }}" class="btn wow slideInLeft" data-wow-delay="0.6s">Start now</a>
+                        <a href="{{ url('/') }}" class="btn wow slideInLeft btn-home" data-wow-delay="0.6s">Start now</a>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-6 d-none d-lg-block">
                     <div class="slider-img animate-slider-img position-relative ml-50">
-                        <img src="img/slider/slider_img01.png" alt="img" class="slider-main-img">
+                        <img src="img/slider/foto-home.png" alt="img" class="slider-main-img">
                         <img src="img/slider/foto-home.png" alt="img" width="500px" class="wow slideInDown" data-wow-delay="0.6s">
                         <div class="img-nth-four wow slideInLeftS" data-wow-delay="1.4s"><img src="img/slider/cog_img1.png" alt="img" class="rotateme"></div>
                         <div class="img-nth-five wow slideInRight" data-wow-delay="1.8s"><img src="img/slider/cog_img2.png" alt="img" class="rotateme"></div>
@@ -40,32 +40,32 @@
             <div class="row brand-active">
                 <div class="col-lg-12">
                     <div class="single-brand">
-                        <img src="img/brand/brand_logo01.png" alt="img">
+                        <img src="img/brand/logo1.png" width="150px" alt="img" style="margin-top: 15px;">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="single-brand">
-                        <img src="img/brand/brand_logo02.png" alt="img">
+                        <img src="img/brand/logo2.png" width="120px" alt="img">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="single-brand">
-                        <img src="img/brand/brand_logo03.png" alt="img">
+                        <img src="img/brand/logo8.jpg" width="100px" alt="img" style="margin-top: 15px;">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="single-brand">
-                        <img src="img/brand/brand_logo04.png" alt="img">
+                        <img src="img/brand/logo4.png" width="120px" alt="img">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="single-brand">
-                        <img src="img/brand/brand_logo05.png" alt="img">
+                        <img src="img/brand/logo5.png"  width="140px" alt="img">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="single-brand">
-                        <img src="img/brand/brand_logo02.png" alt="img">
+                        <img src="img/brand/logo6.png" width="100px" alt="img" style="margin-top: 25px;">
                     </div>
                 </div>
             </div>
@@ -80,12 +80,12 @@
             <div class="col-xl-5 col-lg-7 col-md-10">
                 <div class="section-title text-center mb-70">
                     <span>Jelajahi cara One Dream</span>
-                    <h2> Membangun Visual yang sesuai kebutuhan Anda.</h2>
+                    <h2 class="features-area-title"> Membangun Visual yang sesuai kebutuhan Anda.</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-features mb-30">
                     <div class="features-icon mb-25">
                         <i class="flaticon-photograph"></i>
@@ -93,11 +93,11 @@
                     <div class="features-content">
                         <h3>Videografi</h3>
                         <p>Kami mengerjakan Video Dokumentasi Event, Company Profile, Music Video, Short Movie, dan masih banyak lagi.</p>
-                        <a href="{{ url('/portfolio') }}">More About</a>
+                        <a href="{{ url('/service/video') }}">More About</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-features active mb-30">
                     <div class="features-icon mb-25">
                         <i class="flaticon-ux-design"></i>
@@ -105,11 +105,11 @@
                     <div class="features-content">
                         <h3>Desain Grafis</h3>
                         <p>Kami mengerjakan Desain Sosial Media, Desain untuk Branding, Desain untuk Event, dan masih banyak lagi.</p>
-                        <a href="{{ url('/portfolio') }}">More About</a>
+                        <a href="{{ url('/service/desain') }}">More About</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-features mb-30">
                     <div class="features-icon mb-25">
                         <i class="flaticon-camera"></i>
@@ -117,7 +117,7 @@
                     <div class="features-content">
                         <h3>Fotografi</h3>
                         <p>Kami mengerjakan Foto Dokumentasi Event, Photobooth Wisuda, Foto Sport, dan masih banyak lagi.</p>
-                        <a href="{{ url('/portfolio') }}">More About</a>
+                        <a href="{{ url('/service/foto') }}">More About</a>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@
 </section>
 <!-- features-area-end -->
     <!-- customer-service -->
-    <section class="inner-customer-service position-relative padding-md gray-bg pt-150 pb-150">
+    <section class="inner-customer-service position-relative padding-md gray-bg pb-150">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">

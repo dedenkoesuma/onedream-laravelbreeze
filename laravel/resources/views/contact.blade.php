@@ -67,23 +67,29 @@
                         <h2>Silakan Ceritakan kepada Kami</h2>
                     </div>
                     <div class="contact-form text-center">
-                        <form action="mail.php">
+                    @if(session()->has('success'))
+                        <div class="alert alert-success" role="alert">
+                        {{ session('success') }}
+                        </div>
+                    @endif
+                        <form action="{{route('contact.send')}}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="Nama*">
+                                    <input type="text" name="nama" placeholder="Nama*">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" placeholder="Email*">
+                                    <input type="email" name="email" placeholder="Email*">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="Subjek*">
+                                    <input type="text" name="subject" placeholder="Subjek*">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="Phone">
+                                    <input type="text" name="phone" placeholder="Phone">
                                 </div>
                             </div>
-                            <textarea name="message" id="message" placeholder="Apa yang ingin kamu ceritakan"></textarea>
-                            <button class="btn">Kirim</button>
+                            <textarea name="message" id="message" name="message" placeholder="Apa yang ingin kamu ceritakan"></textarea>
+                            <button class="btn" type="submit">Kirim</button>
                         </form>
                     </div>
                 </div>

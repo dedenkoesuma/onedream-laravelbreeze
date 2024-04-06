@@ -308,10 +308,10 @@
 .contact-box-icon img {
 		width: 45px;
 		position: relative;
-		left: 40%;
+		left: 42%;
 }
 .f-rc-thumb a img.icon1{
-	width: 70px;
+	width: 60px;
 }
 .f-rc-thumb a img.icon2{
 	width: 40px;
@@ -581,9 +581,6 @@
 .inner-software-img.software-img-shape::after {
 	display: none;
 }
-.inner-customer-service.padding-md {
-	padding-top: 150px;
-}
 .awesome-services-wrap {
 	margin: 0;
 }
@@ -649,13 +646,16 @@
 .contact-box-icon img {
 		width: 45px;
 		position: relative;
-		left: 43%;
+		left: 45%;
+}
+.btn-home{
+	margin-left: 20px;
 }
 .f-rc-thumb a img.icon1{
-		width: 48px;
+		width: 40px;
 }
 .f-rc-thumb a img.icon2{
-		width: 40px;
+		width: 35px;
 }
 .footer-logo{
 	width: 60px;
@@ -690,8 +690,12 @@ section{
 }
 .slider-content h2 {
 	font-size: 30px;
-	width: 400px;
-	padding-right: 70px;
+	text-align: end;
+	
+}
+.slider-content p {
+	padding-left: 30px;
+	font-size: 16px;
 }
 .section-title h2 {
 	font-size: 30px;
@@ -1139,6 +1143,10 @@ section{
 	justify-content: unset;
 }
 
+.features-area{
+	font-size: 20px;
+}
+
 }
 
 /* Large Mobile :480px. */
@@ -1149,6 +1157,7 @@ section{
 .section-title h2 {
 	font-size: 36px;
 }
+
 .single-features {
 	padding: 50px 30px;
 }
@@ -1224,3 +1233,4 @@ section{
 }
 
 }
+

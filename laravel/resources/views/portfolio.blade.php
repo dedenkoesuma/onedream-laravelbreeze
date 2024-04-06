@@ -1,8 +1,9 @@
 @extends('layouts.app')
+
 @section('page')
 <main>
-    <!-- breadcrumb-area -->
-    <div class="breadcrumb-area breadcrumb-bg d-flex align-items-center" data-background="img/bg/breadcrumb_bg.jpg">
+    <!-- Breadcrumb Area -->
+    <div class="breadcrumb-area breadcrumb-bg d-flex align-items-center" data-background="img/bg/portfolio.png">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -19,97 +20,83 @@
             </div>
         </div>
     </div>
-    <!-- breadcrumb-area-end -->
-    <!-- projrct-area -->
-    <section class="project-area pt-150 pb-120">
+    <!-- Breadcrumb Area End -->
+
+    <!-- Portfolio #1 -->
+    <section id="portfolio" class="section portfolio portfolio-grid portfolio-2 pb-70 pt-70">
         <div class="container">
-            <div class="inner-project-wrap">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img01.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img02.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img03.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img04.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img05.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img06.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img07.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img08.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="inner-single-project text-center mb-30">
-                            <img src="img/project/portfolio_img09.jpg" alt="img">
-                            <div class="project-overlay">
-                                <h5><a href="#">Blanding Pro</a></h5>
-                                <span>Creative Market</span>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-6 col-md-offset-3">
+                    <div class="heading text-center mb-70 portfolio-filter">
+                        <h1 class="heading_portfolio">Professional Experience</h1>
+                        <ul class="list-inline">
+                            <li><a class="active-filter" href="#" data-filter="*">All</a></li>
+                            <li><a href="#" data-filter=".fotografi">Fotografi</a></li>
+                            <li><a href="#" data-filter=".desaingrafis">Desain Grafis</a></li>
+                            <li><a href="#" data-filter=".videografi">Videografi</a></li>
+                        </ul>
                     </div>
                 </div>
+                <!-- .col-md-6 end -->
             </div>
+            <!-- .row end -->
+
+            <div id="portfolio-all" class="row">
+                <!-- Portfolio Item #1 -->
+                @foreach($posts as $post)
+                    @if ($post->category === 'videografi')
+                        @if ($post->image)
+                            <div class="col-sm-12 col-sm-4 col-md-4 portfolio-item {{ $post->category }}">
+                                <div class="portfolio--img">
+                                    <a href="{{ $post->video }}" target="_blank">
+                                        <button class="card__btn card__btn-play">
+                                            <svg fill="none" height="22" viewBox="0 0 18 22" width="18"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m0 0v22l18-11z" fill="#000"></path>
+                                            </svg>
+                                        </button>
+                                        <img src="{{ asset('storage/' . $post->image) }}" alt="Video Thumbnail"
+                                            class="thumbnail" />
+                                    </a>
+                                    <!-- .portfolio-hover end -->
+                                </div>
+                                <!-- .portfolio-img end -->
+                            </div>
+                        @else
+                            <div class="col-sm-12 col-sm-4 col-md-4 portfolio-item {{ $post->category }}">
+                                <div class="portfolio--img">
+                                    <iframe src="{{ $post->video }}" frameborder="0"></iframe>
+                                    <!-- .portfolio-hover end -->
+                                </div>
+                                <!-- .portfolio-img end -->
+                            </div>
+                        @endif
+                    @else
+                        <div class="col-sm-12 col-sm-4 col-md-4 portfolio-item {{ $post->category }}">
+                            <div class="portfolio--img">
+                                <img src="{{ asset('storage/' . $post->image) }}" width="100px"
+                                    alt="portfolio image" />
+                                <div class="portfolio--hover">
+                                    <div class="portfolio--meta">
+                                        <div class="portfolio--zoom">
+                                            <a class="img-gallery-item" width="100px"
+                                                href="{{ asset('storage/' . $post->image) }}"></a>
+                                        </div>
+                                        <h6><a href="#">{{ $post->title }}</a></h6>
+                                    </div>
+                                </div>
+                                <!-- .portfolio-hover end -->
+                            </div>
+                            <!-- .portfolio-img end -->
+                        </div>
+                    @endif
+                    <!-- .portfolio-item end -->
+                @endforeach
+            </div>
+            <!-- .row end -->
         </div>
+        <!-- .container end -->
     </section>
-    <!-- projrct-area-end -->
-</main> 
-@endSection
+    <!-- #portfolio1 end -->
+</main>
+@endsection

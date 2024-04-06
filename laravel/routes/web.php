@@ -5,10 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home;
 use App\Http\Controllers\About;
 use App\Http\Controllers\Portfolio;
-use App\Http\Controllers\Layanan;
 use App\Http\Controllers\Contact;
-
-
+use App\Http\Controllers\service;
+use App\Http\Controllers\ServiceDetail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,8 +23,12 @@ use App\Http\Controllers\Contact;
 Route::get('/', [Home::class, "index"]);
 Route::get('/about', [About::class, 'index']);
 Route::get('/portfolio', [Portfolio::class, 'index']);
-Route::get('/layanan', [Layanan::class. 'index']);
+Route::get('/service', [service::class, 'index']);
 Route::get('/contact', [Contact::class, 'index']);
+Route::post('/contact', [Contact::class, 'sendEmail'])->name('contact.send');
+Route::get('/service/video', [ServiceDetail::class, 'video']);
+Route::get('/service/foto', [ServiceDetail::class, 'foto']);
+Route::get('/service/desain', [ServiceDetail::class, 'desain']);
 Route::resource('/dashboard/post', DashboardPostController::class)->middleware(['auth']);
 Route::get('/dashboard', function(){
     return view('dashboard');

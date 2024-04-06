@@ -2,16 +2,16 @@
 @section('page')
 <main>
     <!-- breadcrumb-area -->
-    <div class="breadcrumb-area breadcrumb-bg d-flex align-items-center" data-background="img/bg/breadcrumb_bg.jpg">
+    <div class="breadcrumb-area breadcrumb-bg d-flex align-items-center" data-background="img/bg/about1-01.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-wrap text-center">
-                        <h2>About Us</h2>
+                        <h2>Tentang Kami</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                <li class="breadcrumb-item active" aria-current="page">Tentang Kami</li>
                             </ol>
                         </nav>
                     </div>
@@ -31,8 +31,8 @@
                                 <i class="flaticon-settings"></i>
                             </div>
                             <div class="features-content">
-                                <h3>Pay and Process</h3>
-                                <p>Orem Ipsum simply dummy text printing and typesettg industry been industry's</p>
+                                <h3>Tim Profesional dan Berdedikasi</h3>
+                                <p>Kami memiliki tim profesional yang berdedikasi tinggi dan berbakat dalam bidangnya masing-masing.</p>
                                 <a href="#">More About</a>
                             </div>
                         </div>
@@ -40,11 +40,11 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-features inner-single-features mb-30">
                             <div class="features-icon mb-25">
-                                <i class="flaticon-upload"></i>
+                                <i class="flaticon-star"></i>
                             </div>
                             <div class="features-content">
-                                <h3>Managment Marketing</h3>
-                                <p>Orem Ipsum simply dummy text printing and typesettg industry been industry's</p>
+                                <h3>Kreativitas dan Inovasi</h3>
+                                <p>Kami mengutamakan kreativitas dan inovasi dalam setiap proyek yang kami tangani.</p>
                                 <a href="#">More About</a>
                             </div>
                         </div>
@@ -52,11 +52,11 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-features inner-single-features mb-30">
                             <div class="features-icon mb-25">
-                                <i class="flaticon-chat"></i>
+                                <i class="flaticon-share"></i>
                             </div>
                             <div class="features-content">
-                                <h3>Optimal & Support</h3>
-                                <p>Orem Ipsum simply dummy text printing and typesettg industry been industry's</p>
+                                <h3>Kolaborasi dengan Klien</h3>
+                                <p>Kami percaya bahwa kolaborasi yang baik dengan klien adalah kunci keberhasilan proyek.</p>
                                 <a href="#">More About</a>
                             </div>
                         </div>
@@ -80,58 +80,16 @@
                         <h2>One Dream Creative Indonesia</h2>
                     </div>
                     <div class="software-content inner-c-services-content">
-                        <p>One Dream Creative Indonesia adalah tim kreatif didirikan pada 21 Oktober 2021 dan berbasis di Kota Serang provinsi Banten. Sebuah tim kecil yang memiliki mimpi besar, menggabungkan pengalaman, strategi, dan pemikiran kreatif untuk mewujudkan sebuah mimpi menjadi kenyataan.</p>
-                        <p>Dibentuk dan dijalankan oleh anak muda yang memiliki satu mimpi, satu visi, dan satu misi. Kami menciptakan karya dan membantu Anda dalam berkomunikasi secara lebih efektif dan efisien melalui media digital. Motto kami adalah <b>“Menyatukan Mimpi dalam Visualisasi”</b> </p>
+                        <p><b>ONE DREAM CREATIVE INDONESIA</b> adalah perusahaan agensi kreatif (Creatif Agency) yang didirikan pada 21 Oktober 2021 dan bertempat di Kota Serang. Kami berkomitmen untuk membantu anda dalam komunikasi visual secara efektif dan efisien melalui media digital untuk mewujudkan mimpi menjadi nyata dengan pengembangan strategi, kreativitas, dan pengalaman.</p>
+                        <p>Dengan beberapa kegiatan usaha diantaranya adalah fotografi, videografi, desain grafis, manajemen sosial media, dan konten kreatif. Sebagai perusahaan kreatif, kami akan terus berkembang dan meningkatkan layanan untuk memberikan solusi terbaik kepada anda.</b> </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- customer-service-end -->
-    <!-- Start Tabs -->
-    <div class="tabs-content-area pb-150">
-        <div class="container">
-            <div class="center-tabs">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <ul id="tabs" class="nav nav-tabs">
-                            <li class="nav-item">
-                                <a href="" data-target="#tab1" data-toggle="tab" class="active nav-link">Visi Kami</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" data-target="#tab2" data-toggle="tab" class="nav-link">Misi Kami</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-8">
-                        <div id="tabsContent" class="tab-content wow fadeInUp" data-wow-delay="0.5s">
-                            <div id="tab1" class="tab-pane fade active show">
-                                <div class="row align-center">
-                                    <div class="col-lg-12 info"style="padding-right: 0px;padding-left: 0px;">
-                                        <h5>Visi Kami</h5>
-                                        <p>Menjadi tim kreatif yang dikenal secara global dengan integritas dan layanan terbaik serta keahlian untuk menghubungkan bisnis dan memberikan solusi kreatif. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="tab2" class="tab-pane fade">
-                                <div class="row align-center">
-                                    <div class="col-lg-12 info"style="padding-right: 0px;padding-left: 0px;">
-                                        <h5>Misi Kami</h5>
-                                        <img src="assets/img/icon-misi-1.png" width="30px" height="30px"  alt="Thumb"> Menciptakan karya yang berkualitas dan mengikuti perkembangan zaman.</p>
-                                        <img src="assets/img/icon-misi-2.png" width="30px" height="30px"  alt="Thumb"> Bermitra dengan para klien untuk memcahkan masalah-masalah yang ada.</p>
-                                        <img src="assets/img/icon-misi-3.png" width="30px" height="30px"  alt="Thumb"> Memenuhi kebutuhan klien melalui visual yang terbaik.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Tabs -->
-    <!-- counter-area -->
-    <section class="counter-area inner-counter-bg pt-150 pb-100">
+        <!-- counter-area -->
+        <section class="counter-area inner-counter-bg pt-150 pb-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
@@ -183,8 +141,49 @@
         </div>
     </section>
     <!-- counter-area-end -->
+    <!-- Start Tabs -->
+    <div class="tabs-content-area pt-150 pb-100">
+        <div class="container">
+            <div class="center-tabs">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <ul id="tabs" class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a href="" data-target="#tab1" data-toggle="tab" class="active nav-link">Visi Kami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" data-target="#tab2" data-toggle="tab" class="nav-link">Misi Kami</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <div id="tabsContent" class="tab-content wow fadeInUp" data-wow-delay="0.5s">
+                            <div id="tab1" class="tab-pane fade active show">
+                                <div class="row align-center">
+                                    <div class="col-lg-12 info"style="padding-right: 0px;padding-left: 0px;">
+                                        <h5>Visi Kami</h5>
+                                        <p>Menjadi tim kreatif yang dikenal secara global dengan integritas dan layanan terbaik, serta keahlian untuk memberikan solusi kreatif dalam menghubungkan bisnis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab2" class="tab-pane fade">
+                                <div class="row align-center">
+                                    <div class="col-lg-12 info"style="padding-right: 0px;padding-left: 0px;">
+                                        <h5>Misi Kami</h5>
+                                        <p>Berkomitmen untuk menciptakan karya berkualitas yang selalu mengikuti perkembangan zaman. Kami percaya bahwa menjadi mitra bagi para pelanggan adalah kunci untuk memecahkan permasalahan bisnis mereka. Kami berusaha untuk memberikan solusi yang inovatif dan berdaya guna, sehingga membawa dampak positif bagi bisnis dan kesuksesan para pelanggan kami</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Tabs -->
+
     <!-- pricing-area -->
-    <section class="pricing-area position-relative pt-145 pb-120">
+    <!-- <section class="pricing-area position-relative pt-145 pb-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 col-lg-7 col-md-9">
@@ -263,7 +262,7 @@
             </div>
         </div>
         <div class="digi-pricing-shape"><img src="img/shape/pricing_shape.png" alt="img"></div>
-    </section>
+    </section> -->
     <!-- pricing-area-end -->
 </main>
 @endSection
